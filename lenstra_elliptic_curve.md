@@ -8,7 +8,7 @@ Lenstra's Elliptic Curve Method was introduced in a paper written by Hendrik Len
 
 ## Mathematical Overview
 
-We note the definition of an elliptic curve in $\R^2$ space:
+We note the definition of an elliptic curve in $\mathbb{R}^2$ space:
 
 $$y^2 = x^3 + ax + b$$
 
