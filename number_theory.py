@@ -147,7 +147,3 @@ def xgcd(x, y):
         a_, b_ = m, n
     
     return a, b
-
-a = ModInt(3,10)
-b = ModInt(4,10)
-print(-a)
