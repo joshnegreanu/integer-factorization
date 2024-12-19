@@ -19,7 +19,7 @@ We define a group operator $+$ on $E(N)$ as an algorithm:
 ### **Algorithm 1**: Group $+$ Operator over $E(N)$
 
 >Given $P,Q \in E(N)$, we find $R=P+Q=Q+P$. Note that $(x_1.y_1)=P$ and $(x_2,y_2)=Q$.
->1. Is either $P=\mathcal{O}$ or $Q=\mathcal{O}$? Return $R=Q$ if the former and $R=P$ if the latter. Return >$R=\mathcal{O}$ if both.
+>1. Is either $P=\mathcal{O}$ or $Q=\mathcal{O}$? Return $R=Q$ if the former and $R=P$ if the latter. Return $R=\mathcal{O}$ if both.
 >
 >2. Is $x_1=x_2$ and $y_1=-y_2$? Return $R=\mathcal{O}$.
 >
