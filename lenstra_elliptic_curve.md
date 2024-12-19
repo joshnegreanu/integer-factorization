@@ -50,8 +50,11 @@ This would require that $b = 1$, which is why $b$ is never mentioned in the calc
 >Given integer $N\geq2$ and bound $B\geq1$, we find either non-trivial factor of $N$ or fail.
 >1. Select random $a \in \mathbb{Z}_N$ such that $\gcd(4a^3+27, N) = 1$. Our elliptic curve is therefore $y^2=x^3+ax+1$, and point $P=(0,1)$ exists on the curve.
 >
->2. Attempt to compute $B!P$. If a denominator $\alpha$ is ever encountered in either steps 3 or 4 of **Algorithm 1** such that $\gcd(\alpha, N) = d \neq 1$, then check if $d \neq N$, and return if true. Otherwise, return failure or test with new $a$. If all denominators are relatively prime to $N$, return failure.
+>2. Attempt to compute $B!P$. If a denominator $\alpha$ is ever encountered in either steps 3 or 4 of [**Algorithm 1**](#algorithm-1-group--operator-over) such that $\gcd(\alpha, N) = d \neq 1$, then check if $d \neq N$, and return if true. Otherwise, return failure or test with new $a$. If all denominators are relatively prime to $N$, return failure.
 
-We implement **Algorithm 1** and **Algorithm 2** in [```lenstra_elliptic_curve.py```](./lenstra_elliptic_curve.py). Note that we provide an additional parameter for **Algorithm 2**, namely a number of times a random elliptic curve is generated for testing.
+## Implementation
+
+We implement [**Algorithm 1**](#algorithm-1-group--operator-over) and [**Algorithm 2**](#algorithm-2-lenstras-elliptic-curve-factorization-method) in [```lenstra_elliptic_curve.py```](./lenstra_elliptic_curve.py). Note that we provide an additional parameter for **Algorithm 2**, namely a number of times a random elliptic curve is generated for testing.
+
 
 [^1]: My reference, with further explanation and a [supporting link](https://website.com).
